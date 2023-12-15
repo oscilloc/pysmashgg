@@ -58,7 +58,7 @@ print(tournament_with_all_brackets)
 
 ## **Tournament Usage**
 
-#### **NOTE: I would reccomend to use `event_` functions for the four functions that overlap, it makes it so you have one less query for each time you run the function, check CHANGELOG.md v0.8**
+#### **NOTE: I would recommend to use `event_` functions for the four functions that overlap, it makes it so you have one less query for each time you run the function, check CHANGELOG.md v0.8**
 
 ```python
 import SmashGGPy
