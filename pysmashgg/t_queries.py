@@ -55,6 +55,11 @@ SHOW_QUERY = """query ($tourneySlug: String!) {
     startAt
     endAt
     numAttendees
+    owner {
+      id
+      name
+      email
+    }
   }
 }"""
 

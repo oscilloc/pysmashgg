@@ -30,7 +30,6 @@ def show_filter(response):
         return
 
     data = {}
-
     data['id'] = response['data']['tournament']['id']
     data['name'] = response['data']['tournament']['name']
     data['country'] = response['data']['tournament']['countryCode']
@@ -39,6 +38,7 @@ def show_filter(response):
     data['startTimestamp'] = response['data']['tournament']['startAt']
     data['endTimestamp'] = response['data']['tournament']['endAt']
     data['entrants'] = response['data']['tournament']['numAttendees']
+    data['owner'] = response['data']['tournament']['owner']
 
     return data
 
