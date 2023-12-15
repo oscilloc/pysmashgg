@@ -4,12 +4,18 @@ PLAYER_SHOW_INFO_QUERY = """query ($playerId: ID!) {
   player(id: $playerId) {
     gamerTag
     user {
+      id
       name
       genderPronoun
       location {
         country
         state
         city
+      }
+      images{
+          id
+          type
+          url
       }
     }
     rankings(videogameId: 1) {

@@ -140,6 +140,8 @@ def show_sets_filter(response):
 
         cur_set = {}
         cur_set['id'] = node['id']
+        cur_set['startedAt'] = node['startedAt']
+        cur_set['completedAt'] = node['completedAt']
         cur_set['entrant1Id'] = node['slots'][0]['entrant']['id']
         cur_set['entrant2Id'] = node['slots'][1]['entrant']['id']
         cur_set['entrant1Name'] = node['slots'][0]['entrant']['name']
@@ -742,6 +744,8 @@ def player_show_info_filter(response):
         player['city'] = None
         
     player['rankings'] = response['data']['player']['rankings']
+    player['images'] = response['data']['player']['user']['images']
+    player['userId'] = response['data']['player']['user']['id']
 
     return player
 

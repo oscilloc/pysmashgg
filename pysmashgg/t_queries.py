@@ -111,6 +111,8 @@ SHOW_SETS_QUERY = """query EventSets($eventId: ID!, $page: Int!) {
           }
         }
         id
+        startedAt
+        completedAt
         slots {
           standing {
             id
